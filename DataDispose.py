@@ -29,10 +29,10 @@ def read_csv_data():
 
             # 乘客没有存活下来
             if (int(row[1]) == 0):
-                ideal = [0, 1]
+                ideal = [[0], [1]]
             # 乘客存活下来了
             else:
-                ideal = [1, 0]
+                ideal = [[1], [0]]
 
             if(row[5] == ""):
                 age = 0
@@ -41,9 +41,9 @@ def read_csv_data():
 
             try:
                 # Pclass , Sex , Age , SibSp , Parch , Fare , Embarked
-                input = [float(row[2]), change_sex_to_num(row[4]),
-                         age, float(row[6]), float(row[7]),
-                         float(row[9]), change_embarked_port_to_num(row[11])]
+                input = [[float(row[2])], [change_sex_to_num(row[4])],
+                         [age], [float(row[6])], [float(row[7])],
+                         [float(row[9])], [change_embarked_port_to_num(row[11])]]
             except:
                 print()
 
