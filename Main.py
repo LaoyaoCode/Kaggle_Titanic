@@ -3,11 +3,11 @@ import Networks
 import numpy as np
 
 #学习速率
-studySpeed = 0.005
+studySpeed = 0.002
 #规范化参数
-lambdaValue = 1
+lambdaValue = 10
 #隐藏神经元数目
-hideNeurnNumber = 700
+hideNeurnNumber = 10000
 #一次处理的数目
 batchSize = 10
 #迭代次数

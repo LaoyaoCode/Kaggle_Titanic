@@ -47,6 +47,9 @@ class Network:
             for input, ideal in testDatas:
 
                 out = self.moveforward(input)
+                index1 = np.argmax(ideal)
+                index2 = np.argmax(out)
+
                 if(np.argmax(ideal) == np.argmax(out)):
                     rightNumber = rightNumber + 1
 
